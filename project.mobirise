@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-09 11:45",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://skydromefiannce.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://skydromefiannce.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "favicon": false,
+    "mbrsiteDomain": "4nycvcer6u",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Skydrome™ | Home Official Site",
+        "meta_descr": "WebSkydrome has a decentralized Token Generation Event (TGE) that welcomes regular users within the Skydrome ecosystem, and supports protocols looking to build liquidity. Low …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://skydrome.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/skydrome.png\" alt=\"Skydrome\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u0QneA8qaV",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://skydromefiannce.github.io/\" class=\"text-primary\">Skydrome</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://skydrome.finance/\" class=\"text-primary\">Skydrome Finance</a>: Navigating the Future of Financial Technologies</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving landscape of finance, new concepts and technologies are constantly emerging to reshape the way we manage, invest, and interact with our financial resources. One such intriguing development that has recently garnered attention is \"Skydrome Finance.\" This article aims to explore the concept of Skydrome Finance, its potential implications, and how it might revolutionize the financial industry.\n<br>\n<br>Defining <a href=\"https://skydromefiannce.github.io/\" class=\"text-primary\">Skydrome Finance</a>\n<br>Skydrome Finance, as a term, suggests a fusion of financial services with cutting-edge technologies, possibly inspired by advancements in aerospace or drone technology. The term itself hints at a dynamic and adaptive financial ecosystem that operates seamlessly in the metaphorical \"sky\" of digital finance.\n<br>\n<br>Technological Foundations\n<br>At the core of Skydrome Finance are likely to be innovative technologies such as artificial intelligence, blockchain, and advanced data analytics. These technologies have been instrumental in transforming traditional finance, and their integration into Skydrome Finance could amplify their impact, providing faster, more secure, and more efficient financial services.\n<br>\n<br>Digital Sky: The Platform for Financial Innovation\n<br>Skydrome Finance may represent a shift towards a decentralized, digital platform that facilitates financial transactions and services. This platform could leverage blockchain technology to ensure transparency, security, and decentralization. This decentralized structure might redefine the way financial assets are managed and traded, eliminating the need for intermediaries and reducing transaction costs.\n<br>\n<br>Smart Contracts and Automation\n<br>One of the key components of Skydrome Finance could be the use of smart contracts, self-executing contracts with the terms of the agreement directly written into code. These contracts automate and streamline various financial processes, reducing the risk of errors and fraud. Automation through smart contracts might lead to more efficient and cost-effective financial transactions.\n<br>\n<br>Skydrome Finance in Banking\n<br>The banking sector is likely to experience significant transformations with the advent of Skydrome Finance. Mobile banking, digital wallets, and contactless payments might become even more prevalent, providing users with a seamless and secure experience. The ability to access financial services remotely and securely could redefine the concept of traditional brick-and-mortar banking.\n<br>\n<br>Investments and Trading in the Sky\n<br>For investors, Skydrome Finance may open up new avenues and strategies. Advanced data analytics and machine learning algorithms might enable more accurate predictions and insights, allowing investors to make informed decisions. The platform could offer new investment instruments or even introduce tokenization of assets, democratizing access to a broader range of investment opportunities.\n<br>\n<br>Regulatory Considerations\n<br>As with any technological advancement in finance, regulatory considerations will play a crucial role in the development and adoption of Skydrome Finance. Regulatory bodies will need to adapt to the changing landscape, ensuring that the innovations align with existing laws and standards while still fostering a competitive and dynamic financial environment.\n<br>\n<br>Challenges and Risks\n<br>While the potential benefits of Skydrome Finance are exciting, there are also challenges and risks associated with such a transformative concept. Cybersecurity concerns, regulatory hurdles, and the need for widespread adoption are some of the challenges that must be addressed for Skydrome Finance to realize its full potential.\n<br>\n<br>Future Outlook\n<br>The future of Skydrome Finance holds promises of a more interconnected, efficient, and inclusive financial ecosystem. The ongoing integration of emerging technologies into finance suggests that the industry is on the brink of a profound transformation. However, the pace of adoption, industry collaboration, and regulatory support will determine how quickly and effectively Skydrome Finance can revolutionize the financial landscape.\n<br>\n<br>Conclusion\n<br>Skydrome Finance represents an exciting and futuristic vision for the financial industry. As technology continues to advance, the possibilities for innovation in finance are seemingly boundless. While it's essential to approach new concepts with a critical eye, the potential benefits of Skydrome Finance could reshape the way we perceive and interact with financial services. As this concept continues to evolve, industry stakeholders, regulators, and consumers alike will undoubtedly be watching closely, ready to embrace the opportunities it may bring to the sky of financial technologies.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u0Qnfc2lJE",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
